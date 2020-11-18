@@ -1,0 +1,8 @@
+setup.py
+realestateapp/__init__.py
+realestateapp/realestate.py
+realestateapp.egg-info/PKG-INFO
+realestateapp.egg-info/SOURCES.txt
+realestateapp.egg-info/dependency_links.txt
+realestateapp.egg-info/requires.txt
+realestateapp.egg-info/top_level.txt

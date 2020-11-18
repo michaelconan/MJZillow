@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Analysis{% endblock %}
+{% block content %}
+<div class="col-2">
+
+</div>
+<div class="col-8">
+<h3>Enter an address below to get started.</h3>
+<form method="post">
+    <label for="address">Street Address:</label>
+    <input type="text" id="address" name="address"><br>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city"><br>
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state"><br>
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zip"><br>
+    <input type=submit value=Search>
+</form>
+
+{% if address %}
+<h4>Analysis for {{ address }}:</h4>
+<p>Zestimate: {{ zest }}</p>
+<p>Average Comps: {{ comp }}</p>
+{% else %}
+{% endif %}
+</div>
+<div class="col-2">
+
+</div>
+{% endblock %}
